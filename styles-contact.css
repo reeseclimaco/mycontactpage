@@ -1,0 +1,225 @@
+
+/*This is my 201 Contact Web Page Project using Eric Meyer's reset at the top of my page -- your CSS starts on line 56 */
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ---------- This is the beginning of my 201 Contact Web Page Project ------------ */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: url("images/ferris_wheel.jpg");
+  background-size: cover;  /*always covers the entire screen*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+	
+}
+
+.center {
+   
+	width: 40%; /* for responsiveness (screen size) */
+	min-width: 300px; /* for responsiveness */
+	height: 160;
+	padding: 5%;
+    margin: 100px auto 15px;
+	/* changed background color and opacity */
+ 	background: rgba(38, 21, 17, 0.5); /*this uses opacity of 50% for the background color*/
+	border-radius: 110px / 110px; /* to create an oval shape for the background*/
+	text-align: center;
+
+	/* fade in code */
+	animation: fadeIn 5s;
+	-webkit-animation: fadeIn 5s;
+	-moz-animation: fadeIn 5s;
+	-o-animation: fadeIn 5s;
+	-ms-animation: fadeIn 5s;
+	/*border: 4px dashed white;*/
+	
+
+}
+.caption {
+   
+	width: 40%; /* for responsiveness */
+	min-width: 300px; /* for responsiveness */
+	height: 40;
+	padding: 1%;
+    margin: 30px auto;
+	text-align: center;
+
+	/* fade in code */
+	animation: fadeIn 5s;
+	-webkit-animation: fadeIn 5s;
+	-moz-animation: fadeIn 5s;
+	-o-animation: fadeIn 5s;
+	-ms-animation: fadeIn 5s;
+
+}
+  @keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+  } 
+
+  @-moz-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+  }
+
+  @-webkit-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+  }
+
+  @-o-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+
+  }
+
+  @-ms-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+  }
+
+	/* end of fade in code*/
+
+
+#logo {
+	width: 50%; /* for responsiveness */
+    margin-bottom: 20px;
+	/*border: 3px dashed red; */
+	text-align: center;
+}
+
+h1 {
+	/* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	font-family: 'Roslindale', sans-serif;
+	font-style: normal; /*must specify because there are variations*/
+	font-size: 4em;
+    margin: 20px 0px 30px 0px; /* to add distance from logo */
+    color: #fff;
+	letter-spacing: 0.2em;
+}
+
+h2 {
+	 /* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	font-family: "widescreen-ex", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.4em;
+    line-height: 1.4;
+    color: #fff;
+    padding: 0px 0px;
+    margin: 0px auto 10px auto; /* Top Right Bottom Left */
+}
+
+p {
+	/* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	font-family: "inter-variable", sans-serif;
+	font-variation-settings: "slnt" 0, "wght" 400;
+	/* font-weight: 300; thickness of characters */
+	font-size: 1.2em;
+    line-height: 1.6;
+    color: #fff;
+	margin: 40px auto 0px auto;
+	letter-spacing: .1em; /* em is relative to default point size of text for browser */
+}
+
+nav{
+	font-family: "inter-variable", sans-serif;
+	font-size: 1.4em;
+	width: 80%; /* for responsiveness */
+	margin: 0 auto;	/* ------- centers nav elements inside the center div ------- */
+	text-align: center;
+	margin-top: 1.5em;
+}
+
+nav li{
+	/*list layout*/
+	display: inline;
+}
+
+nav a{
+	display: inline-block;
+	/* adds space around links*/
+	padding: 12px;
+}
+
+a{
+color: #444;
+	/*removes underline*/
+text-decoration: none;
+font-weight: bold;
+}
+
+	/* change hover effect */
+a:hover{
+	color: rgb(255, 255, 255);
+	/* background: pink; */
+}
+
+/* add transition effects here */
+.grow:hover
+{
+ -webkit-transform: scale(1.2);
+ -ms-transform: scale(1.2);
+ transform: scale(1.2);
+}
+
+
+    
+    
+
