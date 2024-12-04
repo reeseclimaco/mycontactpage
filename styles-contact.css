@@ -168,8 +168,9 @@ h2 {
 
 p {
 	/* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
-	font-family: "inter-variable", sans-serif;
-	font-variation-settings: "slnt" 0, "wght" 400;
+	font-family: "minion-3-display", serif;
+	font-weight: 400;
+	font-style: normal;	
 	/* font-weight: 300; thickness of characters */
 	font-size: 1.2em;
     line-height: 1.6;
